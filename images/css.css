@@ -1,0 +1,86 @@
+
+
+
+
+body {
+  background: Maroon ;
+}
+
+button#update_button {}
+
+#common_costs {
+  background: Black;
+}
+
+.image_container {
+  overflow: hidden;
+  width: 98%;
+  margin: 1rem auto 0 auto;
+  height: 17vw;
+  border: 2px solid gray;
+}
+
+.image_container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Magic in here: it fixed positions the resulting image */
+/* but also CENTERS it using a negative left margin to shift the image */
+/* to the left - then puts 50% absolute position on the element */
+
+#results {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid gray;
+  box-shadow: 10px 10px 5px #888888;
+  overflow: hidden;
+  display: none;
+  background: white;
+  z-index: 2;
+}
+
+#results:hover {
+  background: #005;
+}
+
+#results img {
+  width: auto;
+  height: 200px;
+  opacity: 0.8;
+}
+
+#results:before {
+  position:absolute;
+  top: 0;
+  right: 0;
+  font-size:20px;
+  background: white;
+  color: red;
+  width: 20px;
+  height: 20px;
+  content: "X";
+  line-height:20px;
+  margin:0;
+  padding:0;
+  text-align:center;
+  border-left: 2px solid gray;
+  border-bottom: 2px solid gray;
+}
+
+@media screen and (min-width:576px) {
+  #results {
+    top: 100px;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    height: 400px;
+  }
+  #results img {
+    height: 400px;
+  }
+}

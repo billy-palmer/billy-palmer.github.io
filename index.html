@@ -22,6 +22,69 @@
       root.render(<MyApp />);
 
     </script>
+
+
+<body>
+<form id="addressbook" name="addressbook" method="post">
+
+
+  <p>
+    <label for="first">First name is: </label>
+    <input type="text" name="first" id="first">
+  </p>
+
+  <p>
+    <label for="last">Last name is: </label>
+    <input type="text" name="last" id="last">
+  </p>
+
+  <p>
+  <label for="middle">Middle initial is: </label>
+  <input type="text" name="middle" id="middle">
+</p>
+
+<p>
+<label for="email">Enter Email Address: </label>
+<input type="text" name="email" id="email">
+</p>
+
+<p>
+<label for="telly">Telephone number: </label>
+<input type="text" name="telly" id="telly">
+</p>
+
+<p>
+  <label>
+    Enter password here: </label>
+  <input type="hidden" name="tracking-info" id="tracking-info">
+  </p>
+
+  <p>
+     <label>
+       <input type="checkbox" name="drank" value="m" id="drank2">
+       Vodka</label>
+     <br>
+     <label>
+       <input type="checkbox" name="drank" value="t" id="drank1">
+       Rum</label>
+   </p>
+   <p>
+
+     <label>
+       <input type="radio" name="Time" value="11" id="Time_0">
+       11:00</label>
+     <br>
+     <label>
+       <input type="radio" name="Time" value="12" id="Time_1">
+       Noon</label>
+     <br>
+     <br>
+   </p>
+
+   <p>
+     <input type="submit" name="submit" id="submit" value="Submit">
+   </p>
+ </form>
     <!--
       Note: this page is a great way to try React but it's not suitable for production.
       It slowly compiles JSX with Babel in the browser and uses a large development build of React.
